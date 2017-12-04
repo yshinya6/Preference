@@ -1,0 +1,13 @@
+[alias]
+graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+st = status
+cm = commit
+co = checkout
+difff = diff --word-diff
+[user]
+	name = yshinya6
+	email = y.shinya.kml@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
